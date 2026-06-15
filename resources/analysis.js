@@ -238,19 +238,22 @@ document.addEventListener('DOMContentLoaded', function() {
                                 const props = feature.getProperties();
                                 let featureName = props['NOMBRE'] || props['nombre'] || props['Name'] || props['nom_comuna'] || props['comunidad'] || props['id'] || 'Elemento';
                                 
+                                // Lógica específica para Inventario de Humedales
+                                if (props['COD_HUMEDA'] !== undefined || props['NOM_HUMDET'] !== undefined) {
+                                    const cod = props['COD_HUMEDA'] || 'Sin código';
+                                    const nom = props['NOM_HUMDET'] || 'Sin nombre';
+                                    featureName = `${cod} - ${nom}`;
+                                }
+                                
                                 const ext = feature.getGeometry().getExtent();
                                 
-                                const existingIdx = resultsByLayer[cleanTitle].findIndex(item => item.name === featureName);
-                                if (existingIdx === -1) {
-                                    resultsByLayer[cleanTitle].push({
-                                        name: featureName,
-                                        distance: distance,
-                                        extent: ext
-                                    });
-                                } else if (distance < resultsByLayer[cleanTitle][existingIdx].distance) {
-                                    resultsByLayer[cleanTitle][existingIdx].distance = distance;
-                                    resultsByLayer[cleanTitle][existingIdx].extent = ext;
-                                }
+                                // Se agrega cada elemento individual encontrado, sin sobrescribir
+                                // aquellos que compartan el mismo nombre o carezcan de él.
+                                resultsByLayer[cleanTitle].push({
+                                    name: featureName,
+                                    distance: distance,
+                                    extent: ext
+                                });
                             }
                         }
                     });
