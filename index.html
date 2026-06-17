@@ -1,25 +1,28 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width,viewport-fit=cover">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        
-        <!-- Modern Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="./resources/ol.css">
-        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
-        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
-        <link rel="stylesheet" href="./resources/qgis2web.css">
-        
-        <style>
-        body, html {
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width,viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./resources/ol.css">
+    <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+    <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+    <link rel="stylesheet" href="./resources/qgis2web.css">
+
+    <style>
+        body,
+        html {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -31,7 +34,7 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         /* Header */
         header {
             background-color: #0f172a;
@@ -43,74 +46,85 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             z-index: 20;
         }
+
         header .branding {
             display: flex;
             align-items: center;
             gap: 12px;
         }
+
         header .branding svg {
             color: #3b82f6;
         }
+
         header h1 {
             margin: 0;
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 0.2px;
         }
+
         header .subtitle {
             font-size: 13px;
             color: #94a3b8;
             margin-top: 2px;
         }
-        
+
         /* Main container */
         .main-container {
             display: flex;
             flex: 1;
             min-height: 0;
         }
-        
+
         /* Sidebar */
         .sidebar {
             width: 360px;
             background-color: #ffffff;
-            box-shadow: 4px 0 10px rgba(0,0,0,0.03);
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.03);
             display: flex;
             flex-direction: column;
             z-index: 10;
         }
-        
+
         /* Map container */
         #map {
             flex: 1;
             position: relative;
             background-color: #e5e7eb;
         }
-        
+
         /* QGIS2Web classes overrides for executive look */
-        .ol-control > * {
-            background-color: #ffffff!important;
-            color: #334155!important;
-            border-radius: 6px!important;
+        .ol-control>* {
+            background-color: #ffffff !important;
+            color: #334155 !important;
+            border-radius: 6px !important;
             border: 1px solid #e2e8f0;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
             transition: background-color 0.2s, color 0.2s;
         }
-        .ol-control > *:focus, .ol-control >*:hover {
-            background-color: #f8fafc!important;
-            color: #0f172a!important;
-        } 
-        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
-            color: #64748b!important;
+
+        .ol-control>*:focus,
+        .ol-control>*:hover {
+            background-color: #f8fafc !important;
+            color: #0f172a !important;
         }
+
+        .ol-attribution a,
+        .gcd-gl-input::placeholder,
+        .search-layer-input-search::placeholder {
+            color: #64748b !important;
+        }
+
         .search-layer-input-search {
-            background-color: #ffffff!important;
+            background-color: #ffffff !important;
         }
-        
+
         /* Layer Switcher enhancements */
         .layer-switcher {
             font-family: 'Inter', sans-serif !important;
         }
+
         .layer-switcher.shown {
             border-radius: 8px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -126,6 +140,7 @@
             box-sizing: border-box;
             background: #ffffff;
         }
+
         #proximity-panel h3 {
             margin-top: 0;
             margin-bottom: 24px;
@@ -138,9 +153,11 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
+
         .form-group {
             margin-bottom: 20px;
         }
+
         .form-group label {
             display: block;
             margin-bottom: 8px;
@@ -148,7 +165,9 @@
             color: #475569;
             font-weight: 600;
         }
-        .form-group select, .form-group input {
+
+        .form-group select,
+        .form-group input {
             width: 100%;
             padding: 12px;
             border: 1px solid #cbd5e1;
@@ -161,12 +180,15 @@
             appearance: none;
             -webkit-appearance: none;
         }
-        .form-group select:focus, .form-group input:focus {
+
+        .form-group select:focus,
+        .form-group input:focus {
             outline: none;
             border-color: #3b82f6;
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
             background-color: #ffffff;
         }
+
         #btn-analyze {
             background-color: #0f172a;
             color: white;
@@ -185,15 +207,18 @@
             justify-content: center;
             gap: 8px;
         }
+
         #btn-analyze:hover {
             background-color: #1e293b;
             transform: translateY(-1px);
             box-shadow: 0 6px 8px -1px rgba(15, 23, 42, 0.3);
         }
+
         #btn-analyze:active {
             transform: translateY(0);
             box-shadow: 0 2px 4px -1px rgba(15, 23, 42, 0.2);
         }
+
         #analysis-results {
             flex-grow: 1;
             overflow-y: auto;
@@ -205,13 +230,14 @@
             color: #334155;
             box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.02);
         }
+
         #analysis-results em {
             color: #64748b;
             display: block;
             text-align: center;
             margin-top: 20px;
         }
-        
+
         /* Result items styling */
         .result-group {
             margin-bottom: 16px;
@@ -220,6 +246,7 @@
             border: 1px solid #e2e8f0;
             overflow: hidden;
         }
+
         .result-layer-title {
             font-weight: 600;
             color: #0f172a;
@@ -233,6 +260,7 @@
             align-items: center;
             justify-content: space-between;
         }
+
         .result-item {
             padding: 10px 12px;
             border-bottom: 1px solid #f1f5f9;
@@ -242,22 +270,28 @@
             flex-direction: column;
             gap: 4px;
         }
+
         .result-item:last-child {
             border-bottom: none;
         }
+
         .result-item:hover {
             background-color: #f8fafc;
         }
+
         .intersect-item {
             border-left: 3px solid #ef4444;
         }
+
         .proximity-item {
             border-left: 3px solid #f59e0b;
         }
+
         .feature-name {
             font-weight: 600;
             color: #1e293b;
         }
+
         .distance-label {
             color: #64748b;
             font-size: 12px;
@@ -265,6 +299,7 @@
             align-items: center;
             gap: 4px;
         }
+
         .distance-label::before {
             content: "";
             display: inline-block;
@@ -279,208 +314,224 @@
             .main-container {
                 flex-direction: column;
             }
+
             .sidebar {
                 width: 100%;
                 height: 45vh;
                 height: 45dvh;
                 flex: none;
-                box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+                box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
                 z-index: 20;
                 order: 2;
                 padding-bottom: env(safe-area-inset-bottom);
                 padding-left: env(safe-area-inset-left);
                 padding-right: env(safe-area-inset-right);
             }
+
             #map {
                 flex: 1;
                 width: 100%;
                 order: 1;
             }
+
             header {
                 padding: max(10px, env(safe-area-inset-top)) max(15px, env(safe-area-inset-right)) 10px max(15px, env(safe-area-inset-left));
             }
+
             header h1 {
                 font-size: 16px;
             }
+
             header .subtitle {
                 font-size: 11px;
             }
-            header > div:last-child {
+
+            header>div:last-child {
                 display: none;
             }
+
             #proximity-panel {
                 padding: 15px;
             }
+
             #proximity-panel h3 {
                 margin-bottom: 15px;
             }
+
             .form-group {
                 margin-bottom: 15px;
             }
+
             .layer-switcher.shown {
                 max-width: 80vw;
                 max-height: 40vh;
                 overflow-y: auto;
             }
         }
-        </style>
-        <title>Visor de Análisis Ambiental</title>
-    </head>
-    <body>
-        <header>
-            <div class="branding">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M2 12A10 10 0 0 0 15 21.54A10 10 0 0 1 15 2.46A10 10 0 0 0 2 12Z"></path>
-                    <path d="M13 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z"></path>
-                    <path d="M15 14v4"></path>
-                    <path d="M15 6v4"></path>
-                </svg>
-                <div>
-                    <h1>Visor de Análisis Espacial</h1>
-                    <div class="subtitle">Plataforma de Evaluación de Proximidad y Conflictos</div>
+    </style>
+    <title>Visor de Análisis Ambiental</title>
+</head>
+
+<body>
+    <header>
+        <div class="branding">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12A10 10 0 0 0 15 21.54A10 10 0 0 1 15 2.46A10 10 0 0 0 2 12Z"></path>
+                <path d="M13 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z"></path>
+                <path d="M15 14v4"></path>
+                <path d="M15 6v4"></path>
+            </svg>
+            <div>
+                <h1>Visor de Análisis Espacial</h1>
+                <div class="subtitle">Plataforma de Evaluación de Proximidad y Conflictos</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="sidebar">
+            <!-- Proximity Analysis UI Panel -->
+            <div id="proximity-panel">
+                <h3>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="1"></circle>
+                    </svg>
+                    Parámetros de Análisis
+                </h3>
+                <div class="form-group">
+                    <label for="group-select">Proyecto / Infraestructura:</label>
+                    <select id="group-select">
+                        <option value="all" selected>Visión Global (Todos los proyectos)</option>
+                        <option value="group_Grupo1TiquelTiuquilemu">Grupo 1: Tiquel - Tiuquilemu</option>
+                        <option value="group_Grupo5LongoviloNavidad">Grupo 5: Longovilo - Navidad</option>
+                        <option value="group_Grupo7RioViejoGuanguali">Grupo 7: Rio Viejo - Guanguali</option>
+                    </select>
                 </div>
-            </div>
-            <div style="font-size: 14px; color: #cbd5e1; font-weight: 500;">
-                Perfil Ejecutivo
-            </div>
-        </header>
-        
-        <div class="main-container">
-            <div class="sidebar">
-                <!-- Proximity Analysis UI Panel -->
-                <div id="proximity-panel">
-                    <h3>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle></svg>
-                        Parámetros de Análisis
-                    </h3>
-                    <div class="form-group">
-                        <label for="group-select">Proyecto / Infraestructura:</label>
-                        <select id="group-select">
-                            <option value="all" selected>Visión Global (Todos los proyectos)</option>
-                            <option value="group_Grupo1TiquelTiuquilemu">Grupo 1: Tiquel - Tiuquilemu</option>
-                            <option value="group_Grupo5LongoviloNavidad">Grupo 5: Longovilo - Navidad</option>
-                            <option value="group_Grupo7RioViejoGuanguali">Grupo 7: Rio Viejo - Guanguali</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="distance-buffer">Radio de Búsqueda / Influencia (m):</label>
-                        <input type="number" id="distance-buffer" value="2000" min="0" step="100">
-                    </div>
-                    <button id="btn-analyze">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 3.6 2.05"></path></svg>
-                        Ejecutar Análisis
-                    </button>
-                    
-                    <div id="analysis-results">
-                        <em>Seleccione los parámetros y ejecute el análisis para visualizar áreas críticas y cruces.</em>
-                    </div>
+                <div class="form-group">
+                    <label for="distance-buffer">Radio de Búsqueda / Influencia (m):</label>
+                    <input type="number" id="distance-buffer" value="2000" min="0" step="100">
                 </div>
-            </div>
-            
-            <div id="map">
-                <div id="popup" class="ol-popup">
-                    <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-                    <div id="popup-content"></div>
+                <button id="btn-analyze">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.21 15.89A10 10 0 1 1 3.6 2.05"></path>
+                    </svg>
+                    Ejecutar Análisis
+                </button>
+
+                <div id="analysis-results">
+                    <em>Seleccione los parámetros y ejecute el análisis para visualizar áreas críticas y cruces.</em>
                 </div>
             </div>
         </div>
-        <script src="resources/qgis2web_expressions.js"></script>
-        <script src="resources/proj4.js"></script>
-        <script>proj4.defs('EPSG:3857','+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs');</script>
-        <script src="./resources/functions.js"></script>
-        <script src="./resources/ol.js"></script>
-        <script src="./resources/ol-layerswitcher.js"></script>
-        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
-        <script src="resources/olms.js"></script>
-        <!-- Layer data files -->
-        <script src="layers/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.js"></script>
-        <script src="layers/AREAESTUDIONuevaSERoViejo_2.js"></script>
-        <script src="layers/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.js"></script>
-        <script src="layers/AREAESTUDIONuevaSERoViejo_4.js"></script>
-        <script src="layers/AREAESTUDIONvaSELongovilo_5.js"></script>
-        <script src="layers/AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.js"></script>
-        <script src="layers/AREAESTUDIONvaSELongovilo_7.js"></script>
-        <script src="layers/AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.js"></script>
-        <script src="layers/AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.js"></script>
-        <script src="layers/AREAESTUDIONvaSETiuquilemu_10.js"></script>
-        <script src="layers/AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.js"></script>
-        <script src="layers/AREAESTUDIONvaSETiuquilemu_12.js"></script>
-        <script src="layers/AREAESTUDIOAnlisisprefactibilidad_13.js"></script>
-        <script src="layers/AREAESTUDIOAnlisisprefactibilidad_14.js"></script>
-        <!-- CIREN and SII layers -->
-        <script src="layers/Suelos_CIREN_Grupo1_1.js"></script>
-        <script src="layers/Predios_CIREN_Grupo1_2.js"></script>
-        <script src="layers/Poligonos_Analisis_Grupo1_3.js"></script>
-        <script src="layers/Suelos_CIREN_Grupo5_4.js"></script>
-        <script src="layers/Poligonos_Analisis_Grupo5_6.js"></script>
-        <script src="layers/Suelos_CIREN_Grupo7_7.js"></script>
-        <script src="layers/Predios_CIREN_Grupo7_8.js"></script>
-        <script src="layers/Poligonos_Analisis_Grupo7_9.js"></script>
-        <script src="layers/propiedades_R05_R06_R13_29943_5.js"></script>
-        <!-- Additional layers -->
-        <script src="layers/TtulosdeMerced_15.js"></script>
-        <script src="layers/reasdeDesarrolloIndgenaADI_16.js"></script>
-        <script src="layers/Comprasdetierras_17.js"></script>
-        <script src="layers/ComunidadesIndgenas_18.js"></script>
-        <script src="layers/MonumentosArqueolgicos_19.js"></script>
-        <script src="layers/MonumentosNacionales_20.js"></script>
-        <script src="layers/SNAP_21.js"></script>
-        <script src="layers/ReservasdelaBiosfera_22.js"></script>
-        <script src="layers/PlanesRECOGEMMA_23.js"></script>
-        <script src="layers/SitiosPrioritariosdeConservacin_24.js"></script>
-        <script src="layers/reasMarinasProtegidas_25.js"></script>
-        <script src="layers/SitiosRamsar_26.js"></script>
-        <script src="layers/InventarioNacionaldeHumedalesMMA_27.js"></script>
-        <script src="layers/InmueblesdeConservacinHistrica_28.js"></script>
-        <script src="layers/ZonasdeConservacinHistrica_29.js"></script>
-        <script src="layers/ZonasdeIntersTursticoZOIT_30.js"></script>
-        <!-- Style files -->
-        <script src="styles/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1_style.js"></script>
-        <script src="styles/AREAESTUDIONuevaSERoViejo_2_style.js"></script>
-        <script src="styles/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3_style.js"></script>
-        <script src="styles/AREAESTUDIONuevaSERoViejo_4_style.js"></script>
-        <script src="styles/AREAESTUDIONvaSELongovilo_5_style.js"></script>
-        <script src="styles/AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6_style.js"></script>
-        <script src="styles/AREAESTUDIONvaSELongovilo_7_style.js"></script>
-        <script src="styles/AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8_style.js"></script>
-        <script src="styles/AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9_style.js"></script>
-        <script src="styles/AREAESTUDIONvaSETiuquilemu_10_style.js"></script>
-        <script src="styles/AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11_style.js"></script>
-        <script src="styles/AREAESTUDIONvaSETiuquilemu_12_style.js"></script>
-        <script src="styles/AREAESTUDIOAnlisisprefactibilidad_13_style.js"></script>
-        <script src="styles/AREAESTUDIOAnlisisprefactibilidad_14_style.js"></script>
-        <script src="styles/Suelos_CIREN_Grupo1_1_style.js"></script>
-        <script src="styles/Suelos_CIREN_Grupo5_4_style.js"></script>
-        <script src="styles/Suelos_CIREN_Grupo7_7_style.js"></script>
-        <script src="styles/Predios_CIREN_Grupo1_2_style.js"></script>
-        <script src="styles/Predios_CIREN_Grupo7_8_style.js"></script>
-        <script src="styles/Poligonos_Analisis_Grupo1_3_style.js"></script>
-        <script src="styles/Poligonos_Analisis_Grupo5_6_style.js"></script>
-        <script src="styles/Poligonos_Analisis_Grupo7_9_style.js"></script>
-        <script src="styles/propiedades_R05_R06_R13_29943_5_style.js"></script>
-        <script src="styles/TtulosdeMerced_15_style.js"></script>
-        <script src="styles/reasdeDesarrolloIndgenaADI_16_style.js"></script>
-        <script src="styles/Comprasdetierras_17_style.js"></script>
-        <script src="styles/ComunidadesIndgenas_18_style.js"></script>
-        <script src="styles/MonumentosArqueolgicos_19_style.js"></script>
-        <script src="styles/MonumentosNacionales_20_style.js"></script>
-        <script src="styles/SNAP_21_style.js"></script>
-        <script src="styles/ReservasdelaBiosfera_22_style.js"></script>
-        <script src="styles/PlanesRECOGEMMA_23_style.js"></script>
-        <script src="styles/SitiosPrioritariosdeConservacin_24_style.js"></script>
-        <script src="styles/reasMarinasProtegidas_25_style.js"></script>
-        <script src="styles/SitiosRamsar_26_style.js"></script>
-        <script src="styles/InventarioNacionaldeHumedalesMMA_27_style.js"></script>
-        <script src="styles/InmueblesdeConservacinHistrica_28_style.js"></script>
-        <script src="styles/ZonasdeConservacinHistrica_29_style.js"></script>
-        <script src="styles/ZonasdeIntersTursticoZOIT_30_style.js"></script>
-        <script src="./layers/layers.js" type="text/javascript"></script> 
-        <script src="./resources/Autolinker.min.js"></script>
-        <script src="./resources/qgis2web.js"></script>
-        
-        <!-- JSTS Library for spatial topology (intersection, exact distance) -->
-        <script src="https://unpkg.com/jsts@2.7.1/dist/jsts.min.js"></script>
-        <!-- Custom proximity analysis script -->
-        <script src="./resources/analysis.js"></script>
-    </body>
+
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src="resources/qgis2web_expressions.js"></script>
+    <script src="resources/proj4.js"></script>
+    <script>proj4.defs('EPSG:3857', '+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs');</script>
+    <script src="./resources/functions.js"></script>
+    <script src="./resources/ol.js"></script>
+    <script src="./resources/ol-layerswitcher.js"></script>
+    <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+    <script src="resources/olms.js"></script>
+    <!-- Layer data files -->
+    <script src="layers/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.js"></script>
+    <script src="layers/AREAESTUDIONuevaSERoViejo_2.js"></script>
+    <script src="layers/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.js"></script>
+    <script src="layers/AREAESTUDIONuevaSERoViejo_4.js"></script>
+    <script src="layers/AREAESTUDIONvaSELongovilo_5.js"></script>
+    <script src="layers/AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.js"></script>
+    <script src="layers/AREAESTUDIONvaSELongovilo_7.js"></script>
+    <script src="layers/AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.js"></script>
+    <script src="layers/AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.js"></script>
+    <script src="layers/AREAESTUDIONvaSETiuquilemu_10.js"></script>
+    <script src="layers/AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.js"></script>
+    <script src="layers/AREAESTUDIONvaSETiuquilemu_12.js"></script>
+    <script src="layers/AREAESTUDIOAnlisisprefactibilidad_13.js"></script>
+    <script src="layers/AREAESTUDIOAnlisisprefactibilidad_14.js"></script>
+    <!-- CIREN and SII layers -->
+    <script src="layers/Suelos_CIREN_Grupo1_1.js"></script>
+    <script src="layers/Predios_CIREN_Grupo1_2.js"></script>
+    <script src="layers/Poligonos_Analisis_Grupo1_3.js"></script>
+    <script src="layers/Suelos_CIREN_Grupo5_4.js"></script>
+    <script src="layers/Poligonos_Analisis_Grupo5_6.js"></script>
+    <script src="layers/Suelos_CIREN_Grupo7_7.js"></script>
+    <script src="layers/Predios_CIREN_Grupo7_8.js"></script>
+    <script src="layers/Poligonos_Analisis_Grupo7_9.js"></script>
+    <script src="layers/propiedades_R05_R06_R13_29943_5.js"></script>
+    <!-- Additional layers -->
+    <script src="layers/TtulosdeMerced_15.js"></script>
+    <script src="layers/reasdeDesarrolloIndgenaADI_16.js"></script>
+    <script src="layers/Comprasdetierras_17.js"></script>
+    <script src="layers/ComunidadesIndgenas_18.js"></script>
+    <script src="layers/MonumentosArqueolgicos_19.js"></script>
+    <script src="layers/MonumentosNacionales_20.js"></script>
+    <script src="layers/SNAP_21.js"></script>
+    <script src="layers/ReservasdelaBiosfera_22.js"></script>
+    <script src="layers/PlanesRECOGEMMA_23.js"></script>
+    <script src="layers/SitiosPrioritariosdeConservacin_24.js"></script>
+    <script src="layers/reasMarinasProtegidas_25.js"></script>
+    <script src="layers/SitiosRamsar_26.js"></script>
+    <script src="layers/InventarioNacionaldeHumedalesMMA_27.js"></script>
+    <script src="layers/InmueblesdeConservacinHistrica_28.js"></script>
+    <script src="layers/ZonasdeConservacinHistrica_29.js"></script>
+    <script src="layers/ZonasdeIntersTursticoZOIT_30.js"></script>
+    <!-- Style files -->
+    <script src="styles/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1_style.js"></script>
+    <script src="styles/AREAESTUDIONuevaSERoViejo_2_style.js"></script>
+    <script src="styles/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3_style.js"></script>
+    <script src="styles/AREAESTUDIONuevaSERoViejo_4_style.js"></script>
+    <script src="styles/AREAESTUDIONvaSELongovilo_5_style.js"></script>
+    <script src="styles/AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6_style.js"></script>
+    <script src="styles/AREAESTUDIONvaSELongovilo_7_style.js"></script>
+    <script src="styles/AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8_style.js"></script>
+    <script src="styles/AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9_style.js"></script>
+    <script src="styles/AREAESTUDIONvaSETiuquilemu_10_style.js"></script>
+    <script src="styles/AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11_style.js"></script>
+    <script src="styles/AREAESTUDIONvaSETiuquilemu_12_style.js"></script>
+    <script src="styles/AREAESTUDIOAnlisisprefactibilidad_13_style.js"></script>
+    <script src="styles/AREAESTUDIOAnlisisprefactibilidad_14_style.js"></script>
+    <script src="styles/Suelos_CIREN_Grupo1_1_style.js"></script>
+    <script src="styles/Suelos_CIREN_Grupo5_4_style.js"></script>
+    <script src="styles/Suelos_CIREN_Grupo7_7_style.js"></script>
+    <script src="styles/Predios_CIREN_Grupo1_2_style.js"></script>
+    <script src="styles/Predios_CIREN_Grupo7_8_style.js"></script>
+    <script src="styles/Poligonos_Analisis_Grupo1_3_style.js"></script>
+    <script src="styles/Poligonos_Analisis_Grupo5_6_style.js"></script>
+    <script src="styles/Poligonos_Analisis_Grupo7_9_style.js"></script>
+    <script src="styles/propiedades_R05_R06_R13_29943_5_style.js"></script>
+    <script src="styles/TtulosdeMerced_15_style.js"></script>
+    <script src="styles/reasdeDesarrolloIndgenaADI_16_style.js"></script>
+    <script src="styles/Comprasdetierras_17_style.js"></script>
+    <script src="styles/ComunidadesIndgenas_18_style.js"></script>
+    <script src="styles/MonumentosArqueolgicos_19_style.js"></script>
+    <script src="styles/MonumentosNacionales_20_style.js"></script>
+    <script src="styles/SNAP_21_style.js"></script>
+    <script src="styles/ReservasdelaBiosfera_22_style.js"></script>
+    <script src="styles/PlanesRECOGEMMA_23_style.js"></script>
+    <script src="styles/SitiosPrioritariosdeConservacin_24_style.js"></script>
+    <script src="styles/reasMarinasProtegidas_25_style.js"></script>
+    <script src="styles/SitiosRamsar_26_style.js"></script>
+    <script src="styles/InventarioNacionaldeHumedalesMMA_27_style.js"></script>
+    <script src="styles/InmueblesdeConservacinHistrica_28_style.js"></script>
+    <script src="styles/ZonasdeConservacinHistrica_29_style.js"></script>
+    <script src="styles/ZonasdeIntersTursticoZOIT_30_style.js"></script>
+    <script src="./layers/layers.js" type="text/javascript"></script>
+    <script src="./resources/Autolinker.min.js"></script>
+    <script src="./resources/qgis2web.js"></script>
+
+    <!-- JSTS Library for spatial topology (intersection, exact distance) -->
+    <script src="https://unpkg.com/jsts@2.7.1/dist/jsts.min.js"></script>
+    <!-- Custom proximity analysis script -->
+    <script src="./resources/analysis.js"></script>
+</body>
+
 </html>
