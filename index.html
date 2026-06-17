@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width,viewport-fit=cover">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         
@@ -23,7 +23,8 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100%;
+            height: 100vh;
+            height: 100dvh;
             font-family: 'Inter', sans-serif;
             background-color: #f4f7f6;
             overflow: hidden;
@@ -35,7 +36,7 @@
         header {
             background-color: #0f172a;
             color: #ffffff;
-            padding: 12px 24px;
+            padding: max(12px, env(safe-area-inset-top)) max(24px, env(safe-area-inset-right)) 12px max(24px, env(safe-area-inset-left));
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -66,7 +67,7 @@
         .main-container {
             display: flex;
             flex: 1;
-            height: calc(100vh - 65px);
+            min-height: 0;
         }
         
         /* Sidebar */
@@ -149,14 +150,16 @@
         }
         .form-group select, .form-group input {
             width: 100%;
-            padding: 10px 12px;
+            padding: 12px;
             border: 1px solid #cbd5e1;
             border-radius: 6px;
             box-sizing: border-box;
-            font-size: 14px;
+            font-size: 16px;
             color: #1e293b;
             background-color: #f8fafc;
             transition: all 0.2s ease;
+            appearance: none;
+            -webkit-appearance: none;
         }
         .form-group select:focus, .form-group input:focus {
             outline: none;
@@ -168,12 +171,12 @@
             background-color: #0f172a;
             color: white;
             border: none;
-            padding: 12px;
+            padding: 14px 12px;
             width: 100%;
             border-radius: 6px;
             cursor: pointer;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 16px;
             transition: all 0.2s ease;
             margin-bottom: 24px;
             box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2);
@@ -279,10 +282,14 @@
             .sidebar {
                 width: 100%;
                 height: 45vh;
+                height: 45dvh;
                 flex: none;
                 box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
                 z-index: 20;
                 order: 2;
+                padding-bottom: env(safe-area-inset-bottom);
+                padding-left: env(safe-area-inset-left);
+                padding-right: env(safe-area-inset-right);
             }
             #map {
                 flex: 1;
@@ -290,7 +297,7 @@
                 order: 1;
             }
             header {
-                padding: 10px 15px;
+                padding: max(10px, env(safe-area-inset-top)) max(15px, env(safe-area-inset-right)) 10px max(15px, env(safe-area-inset-left));
             }
             header h1 {
                 font-size: 16px;
@@ -410,6 +417,23 @@
         <script src="layers/Predios_CIREN_Grupo7_8.js"></script>
         <script src="layers/Poligonos_Analisis_Grupo7_9.js"></script>
         <script src="layers/propiedades_R05_R06_R13_29943_5.js"></script>
+        <!-- Additional layers -->
+        <script src="layers/TtulosdeMerced_15.js"></script>
+        <script src="layers/reasdeDesarrolloIndgenaADI_16.js"></script>
+        <script src="layers/Comprasdetierras_17.js"></script>
+        <script src="layers/ComunidadesIndgenas_18.js"></script>
+        <script src="layers/MonumentosArqueolgicos_19.js"></script>
+        <script src="layers/MonumentosNacionales_20.js"></script>
+        <script src="layers/SNAP_21.js"></script>
+        <script src="layers/ReservasdelaBiosfera_22.js"></script>
+        <script src="layers/PlanesRECOGEMMA_23.js"></script>
+        <script src="layers/SitiosPrioritariosdeConservacin_24.js"></script>
+        <script src="layers/reasMarinasProtegidas_25.js"></script>
+        <script src="layers/SitiosRamsar_26.js"></script>
+        <script src="layers/InventarioNacionaldeHumedalesMMA_27.js"></script>
+        <script src="layers/InmueblesdeConservacinHistrica_28.js"></script>
+        <script src="layers/ZonasdeConservacinHistrica_29.js"></script>
+        <script src="layers/ZonasdeIntersTursticoZOIT_30.js"></script>
         <!-- Style files -->
         <script src="styles/AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1_style.js"></script>
         <script src="styles/AREAESTUDIONuevaSERoViejo_2_style.js"></script>
@@ -425,6 +449,15 @@
         <script src="styles/AREAESTUDIONvaSETiuquilemu_12_style.js"></script>
         <script src="styles/AREAESTUDIOAnlisisprefactibilidad_13_style.js"></script>
         <script src="styles/AREAESTUDIOAnlisisprefactibilidad_14_style.js"></script>
+        <script src="styles/Suelos_CIREN_Grupo1_1_style.js"></script>
+        <script src="styles/Suelos_CIREN_Grupo5_4_style.js"></script>
+        <script src="styles/Suelos_CIREN_Grupo7_7_style.js"></script>
+        <script src="styles/Predios_CIREN_Grupo1_2_style.js"></script>
+        <script src="styles/Predios_CIREN_Grupo7_8_style.js"></script>
+        <script src="styles/Poligonos_Analisis_Grupo1_3_style.js"></script>
+        <script src="styles/Poligonos_Analisis_Grupo5_6_style.js"></script>
+        <script src="styles/Poligonos_Analisis_Grupo7_9_style.js"></script>
+        <script src="styles/propiedades_R05_R06_R13_29943_5_style.js"></script>
         <script src="styles/TtulosdeMerced_15_style.js"></script>
         <script src="styles/reasdeDesarrolloIndgenaADI_16_style.js"></script>
         <script src="styles/Comprasdetierras_17_style.js"></script>

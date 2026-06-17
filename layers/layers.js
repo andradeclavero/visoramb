@@ -14,7 +14,7 @@ var wms_layers = [];
             })
         });
 var format_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1 = new ol.format.GeoJSON();
-var features_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1 = format_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.readFeatures(json_AREAESTUDIONuevaSEGuangualynuevalnea[...]
+var features_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1 = format_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.readFeatures(json_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1 = new ol.source.Vector({
     attributions: ' ',
@@ -44,7 +44,7 @@ var lyr_AREAESTUDIONuevaSERoViejo_2 = new ol.layer.Vector({
                 title: 'AREA ESTUDIO — Nueva S/E Río Viejo'
             });
 var format_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3 = new ol.format.GeoJSON();
-var features_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3 = format_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.readFeatures(json_AREAESTUDIONuevaSEGuangualynuevalnea[...]
+var features_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3 = format_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.readFeatures(json_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3 = new ol.source.Vector({
     attributions: ' ',
@@ -89,7 +89,7 @@ var lyr_AREAESTUDIONvaSELongovilo_5 = new ol.layer.Vector({
                 title: 'AREA ESTUDIO — Nva S/E Longovilo'
             });
 var format_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6 = new ol.format.GeoJSON();
-var features_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6 = format_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.readFeatures(json_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidad[...]
+var features_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6 = format_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.readFeatures(json_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6 = new ol.source.Vector({
     attributions: ' ',
@@ -119,7 +119,7 @@ var lyr_AREAESTUDIONvaSELongovilo_7 = new ol.layer.Vector({
                 title: 'AREA ESTUDIO — Nva S/E Longovilo'
             });
 var format_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8 = new ol.format.GeoJSON();
-var features_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8 = format_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.readFeatures(json_AREAESTUDIONvaSENavidadynvalnea2x66kVNavida[...]
+var features_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8 = format_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.readFeatures(json_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8 = new ol.source.Vector({
     attributions: ' ',
@@ -134,7 +134,7 @@ var lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8 = new ol.layer.V
                 title: 'AREA ESTUDIO — Nva S/E Navidad y nva línea 2x66 kV Navidad – Longovilo'
             });
 var format_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9 = new ol.format.GeoJSON();
-var features_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9 = format_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.readFeatures(json_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquel[...]
+var features_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9 = format_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.readFeatures(json_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9 = new ol.source.Vector({
     attributions: ' ',
@@ -164,7 +164,7 @@ var lyr_AREAESTUDIONvaSETiuquilemu_10 = new ol.layer.Vector({
                 title: 'AREA ESTUDIO — Nva S/E Tiuquilemu'
             });
 var format_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11 = new ol.format.GeoJSON();
-var features_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11 = format_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.readFeatures(json_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiqu[...]
+var features_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11 = format_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.readFeatures(json_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
 var jsonSource_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11 = new ol.source.Vector({
     attributions: ' ',
@@ -233,7 +233,7 @@ jsonSource_Poligonos_Analisis_Grupo1_3_31.addFeatures(features_Poligonos_Analisi
 var lyr_Poligonos_Analisis_Grupo1_3_31 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Poligonos_Analisis_Grupo1_3_31, 
-                style: style_Poligonos_Analisis_Grupo1_3_31,
+                style: style_Poligonos_Analisis_Grupo1_3,
                 popuplayertitle: 'Polígonos Análisis Grupo 1',
                 interactive: true,
                 title: 'Polígonos Análisis Grupo 1'
@@ -248,7 +248,7 @@ jsonSource_Poligonos_Analisis_Grupo5_6_32.addFeatures(features_Poligonos_Analisi
 var lyr_Poligonos_Analisis_Grupo5_6_32 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Poligonos_Analisis_Grupo5_6_32, 
-                style: style_Poligonos_Analisis_Grupo5_6_32,
+                style: style_Poligonos_Analisis_Grupo5_6,
                 popuplayertitle: 'Polígonos Análisis Grupo 5',
                 interactive: true,
                 title: 'Polígonos Análisis Grupo 5'
@@ -263,7 +263,7 @@ jsonSource_Poligonos_Analisis_Grupo7_9_33.addFeatures(features_Poligonos_Analisi
 var lyr_Poligonos_Analisis_Grupo7_9_33 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Poligonos_Analisis_Grupo7_9_33, 
-                style: style_Poligonos_Analisis_Grupo7_9_33,
+                style: style_Poligonos_Analisis_Grupo7_9,
                 popuplayertitle: 'Polígonos Análisis Grupo 7',
                 interactive: true,
                 title: 'Polígonos Análisis Grupo 7'
@@ -278,7 +278,7 @@ jsonSource_Predios_CIREN_Grupo1_2_34.addFeatures(features_Predios_CIREN_Grupo1_2
 var lyr_Predios_CIREN_Grupo1_2_34 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Predios_CIREN_Grupo1_2_34, 
-                style: style_Predios_CIREN_Grupo1_2_34,
+                style: style_Predios_CIREN_Grupo1_2,
                 popuplayertitle: 'Predios CIREN Grupo 1',
                 interactive: true,
                 title: 'Predios CIREN Grupo 1'
@@ -293,7 +293,7 @@ jsonSource_Predios_CIREN_Grupo7_8_35.addFeatures(features_Predios_CIREN_Grupo7_8
 var lyr_Predios_CIREN_Grupo7_8_35 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Predios_CIREN_Grupo7_8_35, 
-                style: style_Predios_CIREN_Grupo7_8_35,
+                style: style_Predios_CIREN_Grupo7_8,
                 popuplayertitle: 'Predios CIREN Grupo 7',
                 interactive: true,
                 title: 'Predios CIREN Grupo 7'
@@ -308,7 +308,7 @@ jsonSource_Suelos_CIREN_Grupo1_1_36.addFeatures(features_Suelos_CIREN_Grupo1_1_3
 var lyr_Suelos_CIREN_Grupo1_1_36 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Suelos_CIREN_Grupo1_1_36, 
-                style: style_Suelos_CIREN_Grupo1_1_36,
+                style: style_Suelos_CIREN_Grupo1_1,
                 popuplayertitle: 'Suelos CIREN Grupo 1',
                 interactive: true,
                 title: 'Suelos CIREN Grupo 1'
@@ -323,7 +323,7 @@ jsonSource_Suelos_CIREN_Grupo5_4_37.addFeatures(features_Suelos_CIREN_Grupo5_4_3
 var lyr_Suelos_CIREN_Grupo5_4_37 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Suelos_CIREN_Grupo5_4_37, 
-                style: style_Suelos_CIREN_Grupo5_4_37,
+                style: style_Suelos_CIREN_Grupo5_4,
                 popuplayertitle: 'Suelos CIREN Grupo 5',
                 interactive: true,
                 title: 'Suelos CIREN Grupo 5'
@@ -338,7 +338,7 @@ jsonSource_Suelos_CIREN_Grupo7_7_38.addFeatures(features_Suelos_CIREN_Grupo7_7_3
 var lyr_Suelos_CIREN_Grupo7_7_38 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_Suelos_CIREN_Grupo7_7_38, 
-                style: style_Suelos_CIREN_Grupo7_7_38,
+                style: style_Suelos_CIREN_Grupo7_7,
                 popuplayertitle: 'Suelos CIREN Grupo 7',
                 interactive: true,
                 title: 'Suelos CIREN Grupo 7'
@@ -353,7 +353,7 @@ jsonSource_propiedades_R05_R06_R13_29943_5_39.addFeatures(features_propiedades_R
 var lyr_propiedades_R05_R06_R13_29943_5_39 = new ol.layer.Vector({
                 declutter: false,
                 source:jsonSource_propiedades_R05_R06_R13_29943_5_39, 
-                style: style_propiedades_R05_R06_R13_29943_5_39,
+                style: style_propiedades_R05_R06_R13_29943_5,
                 popuplayertitle: 'Propiedades SII (R05, R06, R13)',
                 interactive: true,
                 title: 'Propiedades SII (R05, R06, R13)'
@@ -371,7 +371,7 @@ var lyr_TtulosdeMerced_15 = new ol.layer.Vector({
                 style: style_TtulosdeMerced_15,
                 popuplayertitle: 'Títulos de Merced',
                 interactive: true,
-                title: '<span style="display:inline-block;width:14px;height:14px;background:rgba(210,105,30,0.4);border:2px solid rgba(210,105,30,1.0);vertical-align:middle;margin-right:4px;box-s[...]
+                title: '<span style="display:inline-block;width:14px;height:14px;background:rgba(210,105,30,0.4);border:2px solid rgba(210,105,30,1.0);vertical-align:middle;margin-right:4px;box-sizing:border-box;"></span> Títulos de Merced'
             });
 var format_reasdeDesarrolloIndgenaADI_16 = new ol.format.GeoJSON();
 var features_reasdeDesarrolloIndgenaADI_16 = format_reasdeDesarrolloIndgenaADI_16.readFeatures(json_reasdeDesarrolloIndgenaADI_16, 
@@ -386,7 +386,7 @@ var lyr_reasdeDesarrolloIndgenaADI_16 = new ol.layer.Vector({
                 style: style_reasdeDesarrolloIndgenaADI_16,
                 popuplayertitle: 'Áreas de Desarrollo Indígena (ADI)',
                 interactive: true,
-                title: '<span style="display:inline-block;width:14px;height:14px;background:rgba(128,0,128,0.3);border:2px dashed rgba(128,0,128,1.0);vertical-align:middle;margin-right:4px;box-si[...]
+                title: '<span style="display:inline-block;width:14px;height:14px;background:rgba(128,0,128,0.3);border:2px dashed rgba(128,0,128,1.0);vertical-align:middle;margin-right:4px;box-sizing:border-box;"></span> Áreas de Desarrollo Indígena (ADI)'
             });
 var format_Comprasdetierras_17 = new ol.format.GeoJSON();
 var features_Comprasdetierras_17 = format_Comprasdetierras_17.readFeatures(json_Comprasdetierras_17, 
@@ -401,7 +401,7 @@ var lyr_Comprasdetierras_17 = new ol.layer.Vector({
                 style: style_Comprasdetierras_17,
                 popuplayertitle: 'Compras de tierras',
                 interactive: true,
-                title: '<span style="display:inline-block;width:14px;height:14px;background:rgba(0,128,0,0.4);border:2px solid rgba(0,128,0,1.0);vertical-align:middle;margin-right:4px;box-sizing:[...]
+                title: '<span style="display:inline-block;width:14px;height:14px;background:rgba(0,128,0,0.4);border:2px solid rgba(0,128,0,1.0);vertical-align:middle;margin-right:4px;box-sizing:border-box;"></span> Compras de tierras'
             });
 var format_ComunidadesIndgenas_18 = new ol.format.GeoJSON();
 var features_ComunidadesIndgenas_18 = format_ComunidadesIndgenas_18.readFeatures(json_ComunidadesIndgenas_18, 
@@ -416,7 +416,7 @@ var lyr_ComunidadesIndgenas_18 = new ol.layer.Vector({
                 style: style_ComunidadesIndgenas_18,
                 popuplayertitle: 'Comunidades Indígenas',
                 interactive: true,
-                title: '<span style="display:inline-block;width:14px;height:14px;background:rgba(220,20,60,1.0);border:2px solid rgba(200,200,200,1.0);border-radius:50%;vertical-align:middle;marg[...]
+                title: '<span style="display:inline-block;width:14px;height:14px;background:rgba(220,20,60,1.0);border:2px solid rgba(200,200,200,1.0);border-radius:50%;vertical-align:middle;margin-right:4px;box-sizing:border-box;"></span> Comunidades Indígenas'
             });
 var format_MonumentosArqueolgicos_19 = new ol.format.GeoJSON();
 var features_MonumentosArqueolgicos_19 = format_MonumentosArqueolgicos_19.readFeatures(json_MonumentosArqueolgicos_19, 
@@ -609,7 +609,7 @@ var group_Planificacin = new ol.layer.Group({
                                 fold: 'open',
                                 title: 'Planificación'});
 var group_MedioNatural = new ol.layer.Group({
-                                layers: [lyr_SNAP_21,lyr_ReservasdelaBiosfera_22,lyr_PlanesRECOGEMMA_23,lyr_SitiosPrioritariosdeConservacin_24,lyr_reasMarinasProtegidas_25,lyr_SitiosRamsar_26,lyr[...]
+                                layers: [lyr_SNAP_21,lyr_ReservasdelaBiosfera_22,lyr_PlanesRECOGEMMA_23,lyr_SitiosPrioritariosdeConservacin_24,lyr_reasMarinasProtegidas_25,lyr_SitiosRamsar_26],
                                 fold: 'open',
                                 title: 'Medio Natural'});
 var group_MedioCultural = new ol.layer.Group({
@@ -621,137 +621,138 @@ var group_CONADI = new ol.layer.Group({
                                 fold: 'open',
                                 title: 'CONADI'});
 var group_Grupo1TiquelTiuquilemu = new ol.layer.Group({
-                                layers: [lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9,lyr_AREAESTUDIONvaSETiuquilemu_10,lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11[...]
+                                layers: [lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9,lyr_AREAESTUDIONvaSETiuquilemu_10],
                                 fold: 'open',
                                 title: 'Grupo 1 - Tiquel / Tiuquilemu'});
 var group_Grupo5LongoviloNavidad = new ol.layer.Group({
-                                layers: [lyr_AREAESTUDIONvaSELongovilo_5,lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6,lyr_AREAESTUDIONvaSELongovilo_7,lyr_AREAESTUDIONvaSENavidadynv[...]
+                                layers: [lyr_AREAESTUDIONvaSELongovilo_5,lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6,lyr_AREAESTUDIONvaSELongovilo_7],
                                 fold: 'open',
                                 title: 'Grupo 5 - Longovilo / Navidad'});
 var group_Grupo7RioViejoGuanguali = new ol.layer.Group({
-                                layers: [lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1,lyr_AREAESTUDIONuevaSERoViejo_2,lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoVi[...]
+                                layers: [lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1,lyr_AREAESTUDIONuevaSERoViejo_2],
                                 fold: 'open',
                                 title: 'Grupo 7 - Rio Viejo / Guanguali'});
 
-lyr_GoogleHybrid_0.setVisible(true);lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.setVisible(true);lyr_AREAESTUDIONuevaSERoViejo_2.setVisible(true);lyr_AREAESTUDIONuevaSEGuangua[...]
+lyr_GoogleHybrid_0.setVisible(true);lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.setVisible(true);lyr_AREAESTUDIONuevaSERoViejo_2.setVisible(true);
 var layersList = [lyr_GoogleHybrid_0,group_Grupo7RioViejoGuanguali,group_Grupo5LongoviloNavidad,group_Grupo1TiquelTiuquilemu,group_CONADI,group_MedioCultural,group_MedioNatural,group_Planificacin,group_CIREN_SII];
-lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': '[...]
-lyr_AREAESTUDIONuevaSERoViejo_2.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeM[...]
-lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': '[...]
-lyr_AREAESTUDIONuevaSERoViejo_4.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeM[...]
-lyr_AREAESTUDIONvaSELongovilo_5.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeM[...]
-lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'[...]
-lyr_AREAESTUDIONvaSELongovilo_7.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitudeM[...]
-lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'[...]
-lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'[...]
-lyr_AREAESTUDIONvaSETiuquilemu_10.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitud[...]
-lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end[...]
-lyr_AREAESTUDIONvaSETiuquilemu_12.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': 'altitud[...]
-lyr_AREAESTUDIOAnlisisprefactibilidad_13.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': '[...]
-lyr_AREAESTUDIOAnlisisprefactibilidad_14.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMode': '[...]
+lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin'});
+lyr_AREAESTUDIONuevaSERoViejo_2.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'});
+lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin'});
+lyr_AREAESTUDIONuevaSERoViejo_4.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'});
+lyr_AREAESTUDIONvaSELongovilo_5.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'});
+lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin'});
+lyr_AREAESTUDIONvaSELongovilo_7.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'});
+lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin'});
+lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin'});
+lyr_AREAESTUDIONvaSETiuquilemu_10.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'});
+lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin'});
+lyr_AREAESTUDIONvaSETiuquilemu_12.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'});
+lyr_AREAESTUDIOAnlisisprefactibilidad_13.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'});
+lyr_AREAESTUDIOAnlisisprefactibilidad_14.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'description': 'description', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end'});
 lyr_Poligonos_Analisis_Grupo1_3_31.set('fieldAliases', {'AREA': 'AREA', 'NOMBRE': 'NOMBRE'});
 lyr_Poligonos_Analisis_Grupo5_6_32.set('fieldAliases', {'AREA': 'AREA', 'NOMBRE': 'NOMBRE'});
 lyr_Poligonos_Analisis_Grupo7_9_33.set('fieldAliases', {'AREA': 'AREA', 'NOMBRE': 'NOMBRE'});
-lyr_Predios_CIREN_Grupo1_2_34.set('fieldAliases', {});
-lyr_Predios_CIREN_Grupo7_8_35.set('fieldAliases', {});
-lyr_Suelos_CIREN_Grupo1_1_36.set('fieldAliases', {});
-lyr_Suelos_CIREN_Grupo5_4_37.set('fieldAliases', {});
-lyr_Suelos_CIREN_Grupo7_7_38.set('fieldAliases', {});
-lyr_propiedades_R05_R06_R13_29943_5_39.set('fieldAliases', {});
-lyr_TtulosdeMerced_15.set('fieldAliases', {'fid': 'fid', 'comunidad': 'comunidad', 'letra': 'letra', 'titulo_mer': 'titulo_mer', 'p_remensur': 'p_remensur', 'cod_region': 'cod_region', 'nom_regio[...]
-lyr_reasdeDesarrolloIndgenaADI_16.set('fieldAliases', {'fid': 'fid', 'COD_COMUNA': 'COD_COMUNA', 'COD_PROVIN': 'COD_PROVIN', 'COD_REGION': 'COD_REGION', 'COMUNAS': 'COMUNAS', 'ETNIA': 'ETNIA', 'F[...]
-lyr_Comprasdetierras_17.set('fieldAliases', {'fid': 'fid', 'year': 'year', 'sector': 'sector', 'nombre': 'nombre', 'apellido_p': 'apellido_p', 'apellido_m': 'apellido_m', 'tipo_proye': 'tipo_proy[...]
-lyr_ComunidadesIndgenas_18.set('fieldAliases', {'fid': 'fid', 'direccion': 'direccion', 'comunidad': 'comunidad', 'fuente_inf': 'fuente_inf', 'estado': 'estado', 'cod_region': 'cod_region', 'nom_[...]
-lyr_MonumentosArqueolgicos_19.set('fieldAliases', {'fid': 'fid', 'CUT_COM': 'CUT_COM', 'REGION': 'REGION', 'PROVINCIA': 'PROVINCIA', 'COMUNA': 'COMUNA', 'CORRELATIV': 'CORRELATIV', 'ID_REGISTR': [...]
-lyr_MonumentosNacionales_20.set('fieldAliases', {'fid': 'fid', 'objectid': 'objectid', 'cut_com': 'cut_com', 'region': 'region', 'provincia': 'provincia', 'comuna': 'comuna', 'codigo': 'codigo', [...]
-lyr_SNAP_21.set('fieldAliases', {'fid': 'fid', 'SUPERFICIE': 'SUPERFICIE', 'NOMBRE_TOT': 'NOMBRE_TOT', 'ID_CATASTR': 'ID_CATASTR', 'CATEGORIA': 'CATEGORIA', 'NOMBRE_UNI': 'NOMBRE_UNI', 'REGION': [...]
-lyr_ReservasdelaBiosfera_22.set('fieldAliases', {'fid': 'fid', 'fid_1': 'fid_1', 'cod_ap': 'cod_ap', 'Codrnap': 'Codrnap', 'nom_orig': 'nom_orig', 'id_desig': 'id_desig', 'designa': 'designa', 'a[...]
+lyr_Predios_CIREN_Grupo1_2_34.set('fieldAliases', {'ROL': 'ROL'});
+lyr_Predios_CIREN_Grupo7_8_35.set('fieldAliases', {'ROL': 'ROL'});
+lyr_Suelos_CIREN_Grupo1_1_36.set('fieldAliases', {'TEXTCAUS': 'TEXTCAUS'});
+lyr_Suelos_CIREN_Grupo5_4_37.set('fieldAliases', {'TEXTCAUS': 'TEXTCAUS'});
+lyr_Suelos_CIREN_Grupo7_7_38.set('fieldAliases', {'TEXTCAUS': 'TEXTCAUS'});
+lyr_propiedades_R05_R06_R13_29943_5_39.set('fieldAliases', {'ROL': 'ROL'});
+lyr_TtulosdeMerced_15.set('fieldAliases', {'fid': 'fid', 'comunidad': 'comunidad', 'letra': 'letra', 'titulo_mer': 'titulo_mer', 'p_remensur': 'p_remensur', 'cod_region': 'cod_region'});
+lyr_reasdeDesarrolloIndgenaADI_16.set('fieldAliases', {'fid': 'fid', 'COD_COMUNA': 'COD_COMUNA', 'COD_PROVIN': 'COD_PROVIN', 'COD_REGION': 'COD_REGION', 'COMUNAS': 'COMUNAS', 'ETNIA': 'ETNIA'});
+lyr_Comprasdetierras_17.set('fieldAliases', {'fid': 'fid', 'year': 'year', 'sector': 'sector', 'nombre': 'nombre', 'apellido_p': 'apellido_p', 'apellido_m': 'apellido_m'});
+lyr_ComunidadesIndgenas_18.set('fieldAliases', {'fid': 'fid', 'direccion': 'direccion', 'comunidad': 'comunidad', 'fuente_inf': 'fuente_inf', 'estado': 'estado', 'cod_region': 'cod_region'});
+lyr_MonumentosArqueolgicos_19.set('fieldAliases', {'fid': 'fid', 'CUT_COM': 'CUT_COM', 'REGION': 'REGION', 'PROVINCIA': 'PROVINCIA', 'COMUNA': 'COMUNA', 'CORRELATIV': 'CORRELATIV'});
+lyr_MonumentosNacionales_20.set('fieldAliases', {'fid': 'fid', 'objectid': 'objectid', 'cut_com': 'cut_com', 'region': 'region', 'provincia': 'provincia', 'comuna': 'comuna', 'codigo': 'codigo'});
+lyr_SNAP_21.set('fieldAliases', {'fid': 'fid', 'SUPERFICIE': 'SUPERFICIE', 'NOMBRE_TOT': 'NOMBRE_TOT', 'ID_CATASTR': 'ID_CATASTR', 'CATEGORIA': 'CATEGORIA', 'NOMBRE_UNI': 'NOMBRE_UNI'});
+lyr_ReservasdelaBiosfera_22.set('fieldAliases', {'fid': 'fid', 'fid_1': 'fid_1', 'cod_ap': 'cod_ap', 'Codrnap': 'Codrnap', 'nom_orig': 'nom_orig', 'id_desig': 'id_desig', 'designa': 'designa'});
 lyr_PlanesRECOGEMMA_23.set('fieldAliases', {'fid': 'fid', 'ID_Plan': 'ID_Plan', 'superficie': 'superficie', 'recoge': 'recoge', });
-lyr_SitiosPrioritariosdeConservacin_24.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'nombre': 'nombre', 'cod_region': 'Región (CUT)', 'nom_region': 'Región', 'cod_provincia': 'Pro[...]
-lyr_reasMarinasProtegidas_25.set('fieldAliases', {'fid': 'fid', 'NOMBRE': 'NOMBRE', 'TIPO_AMP': 'TIPO_AMP', 'C_REGION': 'C_REGION', 'REGION': 'REGION', 'C_INSTIT': 'C_INSTIT', 'SUP_HA': 'SUP_HA',[...]
-lyr_SitiosRamsar_26.set('fieldAliases', {'fid': 'fid', 'fid_1': 'fid_1', 'cod_ap': 'cod_ap', 'Codrnap': 'Codrnap', 'nom_orig': 'nom_orig', 'id_desig': 'id_desig', 'designa': 'designa', 'anio_decr[...]
-lyr_InventarioNacionaldeHumedalesMMA_27.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'COD_HUMEDA': 'COD_HUMEDA', 'NOM_HUMDET': 'NOM_HUMDET', 'NOM_HUMMAS': 'NOM_HUMMAS', 'ORDEN_1': '[...]
-lyr_InmueblesdeConservacinHistrica_28.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'REGION': 'REGION', 'COMUNA': 'COMUNA', 'NOMBRE': 'NOMBRE', 'DIRECCION': 'DIRECCION', 'DO': 'DO', [...]
-lyr_ZonasdeConservacinHistrica_29.set('fieldAliases', {'fid': 'fid', 'OBJECTID_1': 'OBJECTID_1', 'OBJECTID': 'OBJECTID', 'Shape_Leng': 'Shape_Leng', 'REG': 'REG', 'COM': 'COM', 'LOC': 'LOC', 'ZON[...]
-lyr_ZonasdeIntersTursticoZOIT_30.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'descriptio': 'descriptio', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMo': 'altitudeMo',[...]
-lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessella[...]
-lyr_AREAESTUDIONuevaSERoViejo_2.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibil[...]
-lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessella[...]
-lyr_AREAESTUDIONuevaSERoViejo_4.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibil[...]
-lyr_AREAESTUDIONvaSELongovilo_5.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibil[...]
-lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate':[...]
-lyr_AREAESTUDIONvaSELongovilo_7.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visibil[...]
-lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate':[...]
-lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate':[...]
-lyr_AREAESTUDIONvaSETiuquilemu_10.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visib[...]
-lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate'[...]
-lyr_AREAESTUDIONvaSETiuquilemu_12.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '', 'visib[...]
-lyr_AREAESTUDIOAnlisisprefactibilidad_13.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '',[...]
-lyr_AREAESTUDIOAnlisisprefactibilidad_14.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': '',[...]
+lyr_SitiosPrioritariosdeConservacin_24.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'nombre': 'nombre', 'cod_region': 'Región (CUT)', 'nom_region': 'Región'});
+lyr_reasMarinasProtegidas_25.set('fieldAliases', {'fid': 'fid', 'NOMBRE': 'NOMBRE', 'TIPO_AMP': 'TIPO_AMP', 'C_REGION': 'C_REGION', 'REGION': 'REGION', 'C_INSTIT': 'C_INSTIT', 'SUP_HA': 'SUP_HA'});
+lyr_SitiosRamsar_26.set('fieldAliases', {'fid': 'fid', 'fid_1': 'fid_1', 'cod_ap': 'cod_ap', 'Codrnap': 'Codrnap', 'nom_orig': 'nom_orig', 'id_desig': 'id_desig', 'designa': 'designa'});
+lyr_InventarioNacionaldeHumedalesMMA_27.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'COD_HUMEDA': 'COD_HUMEDA', 'NOM_HUMDET': 'NOM_HUMDET', 'NOM_HUMMAS': 'NOM_HUMMAS'});
+lyr_InmueblesdeConservacinHistrica_28.set('fieldAliases', {'fid': 'fid', 'OBJECTID': 'OBJECTID', 'REGION': 'REGION', 'COMUNA': 'COMUNA', 'NOMBRE': 'NOMBRE', 'DIRECCION': 'DIRECCION', 'DO': 'DO'});
+lyr_ZonasdeConservacinHistrica_29.set('fieldAliases', {'fid': 'fid', 'OBJECTID_1': 'OBJECTID_1', 'OBJECTID': 'OBJECTID', 'Shape_Leng': 'Shape_Leng', 'REG': 'REG', 'COM': 'COM', 'LOC': 'LOC'});
+lyr_ZonasdeIntersTursticoZOIT_30.set('fieldAliases', {'id': 'id', 'Name': 'Name', 'descriptio': 'descriptio', 'timestamp': 'timestamp', 'begin': 'begin', 'end': 'end', 'altitudeMo': 'altitudeMo'});
+lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': ''});
+lyr_AREAESTUDIONuevaSERoViejo_2.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': ''});
+lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': ''});
+lyr_AREAESTUDIONuevaSERoViejo_4.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': ''});
+lyr_AREAESTUDIONvaSELongovilo_5.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': ''});
+lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': ''});
+lyr_AREAESTUDIONvaSELongovilo_7.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': ''});
+lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': ''});
+lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': ''});
+lyr_AREAESTUDIONvaSETiuquilemu_10.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': ''});
+lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': ''});
+lyr_AREAESTUDIONvaSETiuquilemu_12.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': ''});
+lyr_AREAESTUDIOAnlisisprefactibilidad_13.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': ''});
+lyr_AREAESTUDIOAnlisisprefactibilidad_14.set('fieldImages', {'id': '', 'Name': '', 'description': '', 'timestamp': '', 'begin': '', 'end': '', 'altitudeMode': '', 'tessellate': '', 'extrude': ''});
 lyr_Poligonos_Analisis_Grupo1_3_31.set('fieldImages', {'AREA': 'TextEdit', 'NOMBRE': 'TextEdit'});
 lyr_Poligonos_Analisis_Grupo5_6_32.set('fieldImages', {'AREA': 'TextEdit', 'NOMBRE': 'TextEdit'});
 lyr_Poligonos_Analisis_Grupo7_9_33.set('fieldImages', {'AREA': 'TextEdit', 'NOMBRE': 'TextEdit'});
-lyr_Predios_CIREN_Grupo1_2_34.set('fieldImages', {});
-lyr_Predios_CIREN_Grupo7_8_35.set('fieldImages', {});
-lyr_Suelos_CIREN_Grupo1_1_36.set('fieldImages', {});
-lyr_Suelos_CIREN_Grupo5_4_37.set('fieldImages', {});
-lyr_Suelos_CIREN_Grupo7_7_38.set('fieldImages', {});
-lyr_propiedades_R05_R06_R13_29943_5_39.set('fieldImages', {});
-lyr_TtulosdeMerced_15.set('fieldImages', {'fid': 'TextEdit', 'comunidad': 'TextEdit', 'letra': 'TextEdit', 'titulo_mer': 'Range', 'p_remensur': 'TextEdit', 'cod_region': 'TextEdit', 'nom_region':[...]
-lyr_reasdeDesarrolloIndgenaADI_16.set('fieldImages', {'fid': 'TextEdit', 'COD_COMUNA': 'TextEdit', 'COD_PROVIN': 'TextEdit', 'COD_REGION': 'TextEdit', 'COMUNAS': 'TextEdit', 'ETNIA': 'TextEdit', [...]
-lyr_Comprasdetierras_17.set('fieldImages', {'fid': 'TextEdit', 'year': 'TextEdit', 'sector': 'TextEdit', 'nombre': 'TextEdit', 'apellido_p': 'TextEdit', 'apellido_m': 'TextEdit', 'tipo_proye': 'T[...]
-lyr_ComunidadesIndgenas_18.set('fieldImages', {'fid': 'TextEdit', 'direccion': 'TextEdit', 'comunidad': 'TextEdit', 'fuente_inf': 'TextEdit', 'estado': 'TextEdit', 'cod_region': 'TextEdit', 'nom_[...]
-lyr_MonumentosArqueolgicos_19.set('fieldImages', {'fid': 'TextEdit', 'CUT_COM': 'TextEdit', 'REGION': 'TextEdit', 'PROVINCIA': 'TextEdit', 'COMUNA': 'TextEdit', 'CORRELATIV': 'TextEdit', 'ID_REGI[...]
-lyr_MonumentosNacionales_20.set('fieldImages', {'fid': 'TextEdit', 'objectid': 'TextEdit', 'cut_com': 'TextEdit', 'region': 'TextEdit', 'provincia': 'TextEdit', 'comuna': 'TextEdit', 'codigo': 'T[...]
-lyr_SNAP_21.set('fieldImages', {'fid': 'TextEdit', 'SUPERFICIE': 'TextEdit', 'NOMBRE_TOT': 'TextEdit', 'ID_CATASTR': 'TextEdit', 'CATEGORIA': 'TextEdit', 'NOMBRE_UNI': 'TextEdit', 'REGION': 'Text[...]
-lyr_ReservasdelaBiosfera_22.set('fieldImages', {'fid': 'TextEdit', 'fid_1': 'TextEdit', 'cod_ap': 'TextEdit', 'Codrnap': 'TextEdit', 'nom_orig': 'TextEdit', 'id_desig': 'TextEdit', 'designa': 'Te[...]
+lyr_Predios_CIREN_Grupo1_2_34.set('fieldImages', {'ROL': 'TextEdit'});
+lyr_Predios_CIREN_Grupo7_8_35.set('fieldImages', {'ROL': 'TextEdit'});
+lyr_Suelos_CIREN_Grupo1_1_36.set('fieldImages', {'TEXTCAUS': 'TextEdit'});
+lyr_Suelos_CIREN_Grupo5_4_37.set('fieldImages', {'TEXTCAUS': 'TextEdit'});
+lyr_Suelos_CIREN_Grupo7_7_38.set('fieldImages', {'TEXTCAUS': 'TextEdit'});
+lyr_propiedades_R05_R06_R13_29943_5_39.set('fieldImages', {'ROL': 'TextEdit'});
+lyr_TtulosdeMerced_15.set('fieldImages', {'fid': 'TextEdit', 'comunidad': 'TextEdit', 'letra': 'TextEdit', 'titulo_mer': 'Range', 'p_remensur': 'TextEdit', 'cod_region': 'TextEdit'});
+lyr_reasdeDesarrolloIndgenaADI_16.set('fieldImages', {'fid': 'TextEdit', 'COD_COMUNA': 'TextEdit', 'COD_PROVIN': 'TextEdit', 'COD_REGION': 'TextEdit', 'COMUNAS': 'TextEdit', 'ETNIA': 'TextEdit'});
+lyr_Comprasdetierras_17.set('fieldImages', {'fid': 'TextEdit', 'year': 'TextEdit', 'sector': 'TextEdit', 'nombre': 'TextEdit', 'apellido_p': 'TextEdit', 'apellido_m': 'TextEdit'});
+lyr_ComunidadesIndgenas_18.set('fieldImages', {'fid': 'TextEdit', 'direccion': 'TextEdit', 'comunidad': 'TextEdit', 'fuente_inf': 'TextEdit', 'estado': 'TextEdit', 'cod_region': 'TextEdit'});
+lyr_MonumentosArqueolgicos_19.set('fieldImages', {'fid': 'TextEdit', 'CUT_COM': 'TextEdit', 'REGION': 'TextEdit', 'PROVINCIA': 'TextEdit', 'COMUNA': 'TextEdit', 'CORRELATIV': 'TextEdit'});
+lyr_MonumentosNacionales_20.set('fieldImages', {'fid': 'TextEdit', 'objectid': 'TextEdit', 'cut_com': 'TextEdit', 'region': 'TextEdit', 'provincia': 'TextEdit', 'comuna': 'TextEdit'});
+lyr_SNAP_21.set('fieldImages', {'fid': 'TextEdit', 'SUPERFICIE': 'TextEdit', 'NOMBRE_TOT': 'TextEdit', 'ID_CATASTR': 'TextEdit', 'CATEGORIA': 'TextEdit', 'NOMBRE_UNI': 'TextEdit'});
+lyr_ReservasdelaBiosfera_22.set('fieldImages', {'fid': 'TextEdit', 'fid_1': 'TextEdit', 'cod_ap': 'TextEdit', 'Codrnap': 'TextEdit', 'nom_orig': 'TextEdit', 'id_desig': 'TextEdit'});
 lyr_PlanesRECOGEMMA_23.set('fieldImages', {'fid': 'TextEdit', 'ID_Plan': 'TextEdit', 'superficie': 'TextEdit', 'recoge': 'TextEdit', });
-lyr_SitiosPrioritariosdeConservacin_24.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'nombre': 'TextEdit', 'cod_region': 'TextEdit', 'nom_region': 'TextEdit', 'cod_provincia': 'T[...]
-lyr_reasMarinasProtegidas_25.set('fieldImages', {'fid': 'TextEdit', 'NOMBRE': 'TextEdit', 'TIPO_AMP': 'TextEdit', 'C_REGION': 'TextEdit', 'REGION': 'TextEdit', 'C_INSTIT': 'TextEdit', 'SUP_HA': '[...]
-lyr_SitiosRamsar_26.set('fieldImages', {'fid': 'TextEdit', 'fid_1': 'TextEdit', 'cod_ap': 'TextEdit', 'Codrnap': 'TextEdit', 'nom_orig': 'TextEdit', 'id_desig': 'TextEdit', 'designa': 'TextEdit',[...]
-lyr_InventarioNacionaldeHumedalesMMA_27.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'COD_HUMEDA': 'TextEdit', 'NOM_HUMDET': 'TextEdit', 'NOM_HUMMAS': 'TextEdit', 'ORDEN_1': 'Te[...]
-lyr_InmueblesdeConservacinHistrica_28.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'Range', 'REGION': 'TextEdit', 'COMUNA': 'TextEdit', 'NOMBRE': 'TextEdit', 'DIRECCION': 'TextEdit', 'DO': [...]
-lyr_ZonasdeConservacinHistrica_29.set('fieldImages', {'fid': '', 'OBJECTID_1': '', 'OBJECTID': '', 'Shape_Leng': '', 'REG': '', 'COM': '', 'LOC': '', 'ZONA': '', 'NOM': '', 'UPERM': '', 'UPROH': [...]
-lyr_ZonasdeIntersTursticoZOIT_30.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'descriptio': 'TextEdit', 'timestamp': 'TextEdit', 'begin': 'TextEdit', 'end': 'TextEdit', 'altitudeMo':[...]
-lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hid[...]
-lyr_AREAESTUDIONuevaSERoViejo_2.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field[...]
-lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hid[...]
-lyr_AREAESTUDIONuevaSERoViejo_4.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field[...]
-lyr_AREAESTUDIONvaSELongovilo_5.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field[...]
-lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden [...]
-lyr_AREAESTUDIONvaSELongovilo_7.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden field[...]
-lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden [...]
-lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden [...]
-lyr_AREAESTUDIONvaSETiuquilemu_10.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden fie[...]
-lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden[...]
-lyr_AREAESTUDIONvaSETiuquilemu_12.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field', 'end': 'hidden fie[...]
-lyr_AREAESTUDIOAnlisisprefactibilidad_13.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'alt[...]
-lyr_AREAESTUDIOAnlisisprefactibilidad_14.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'alt[...]
+lyr_SitiosPrioritariosdeConservacin_24.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'nombre': 'TextEdit', 'cod_region': 'TextEdit', 'nom_region': 'TextEdit'});
+lyr_reasMarinasProtegidas_25.set('fieldImages', {'fid': 'TextEdit', 'NOMBRE': 'TextEdit', 'TIPO_AMP': 'TextEdit', 'C_REGION': 'TextEdit', 'REGION': 'TextEdit', 'C_INSTIT': 'TextEdit'});
+lyr_SitiosRamsar_26.set('fieldImages', {'fid': 'TextEdit', 'fid_1': 'TextEdit', 'cod_ap': 'TextEdit', 'Codrnap': 'TextEdit', 'nom_orig': 'TextEdit', 'id_desig': 'TextEdit', 'designa': 'TextEdit'});
+lyr_InventarioNacionaldeHumedalesMMA_27.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'TextEdit', 'COD_HUMEDA': 'TextEdit', 'NOM_HUMDET': 'TextEdit', 'NOM_HUMMAS': 'TextEdit'});
+lyr_InmueblesdeConservacinHistrica_28.set('fieldImages', {'fid': 'TextEdit', 'OBJECTID': 'Range', 'REGION': 'TextEdit', 'COMUNA': 'TextEdit', 'NOMBRE': 'TextEdit', 'DIRECCION': 'TextEdit'});
+lyr_ZonasdeConservacinHistrica_29.set('fieldImages', {'fid': '', 'OBJECTID_1': '', 'OBJECTID': '', 'Shape_Leng': '', 'REG': '', 'COM': '', 'LOC': '', 'ZONA': '', 'NOM': '', 'UPERM': ''});
+lyr_ZonasdeIntersTursticoZOIT_30.set('fieldImages', {'id': 'TextEdit', 'Name': 'TextEdit', 'descriptio': 'TextEdit', 'timestamp': 'TextEdit', 'begin': 'TextEdit', 'end': 'TextEdit'});
+lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_1.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field'});
+lyr_AREAESTUDIONuevaSERoViejo_2.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field'});
+lyr_AREAESTUDIONuevaSEGuangualynuevalnea2x66kVGuangualRoViejo_3.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field'});
+lyr_AREAESTUDIONuevaSERoViejo_4.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field'});
+lyr_AREAESTUDIONvaSELongovilo_5.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field'});
+lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_6.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field'});
+lyr_AREAESTUDIONvaSELongovilo_7.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field'});
+lyr_AREAESTUDIONvaSENavidadynvalnea2x66kVNavidadLongovilo_8.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field'});
+lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_9.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field'});
+lyr_AREAESTUDIONvaSETiuquilemu_10.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field'});
+lyr_AREAESTUDIONvaSETiquelyNvalnea2x500KVTiquelTiuquilemu_11.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field'});
+lyr_AREAESTUDIONvaSETiuquilemu_12.set('fieldLabels', {'id': 'hidden field', 'Name': 'no label', 'description': 'no label', 'timestamp': 'hidden field', 'begin': 'hidden field'});
+lyr_AREAESTUDIOAnlisisprefactibilidad_13.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label'});
+lyr_AREAESTUDIOAnlisisprefactibilidad_14.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'description': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label'});
 lyr_Poligonos_Analisis_Grupo1_3_31.set('fieldLabels', {'AREA': 'no label', 'NOMBRE': 'no label'});
 lyr_Poligonos_Analisis_Grupo5_6_32.set('fieldLabels', {'AREA': 'no label', 'NOMBRE': 'no label'});
 lyr_Poligonos_Analisis_Grupo7_9_33.set('fieldLabels', {'AREA': 'no label', 'NOMBRE': 'no label'});
-lyr_Predios_CIREN_Grupo1_2_34.set('fieldLabels', {});
-lyr_Predios_CIREN_Grupo7_8_35.set('fieldLabels', {});
-lyr_Suelos_CIREN_Grupo1_1_36.set('fieldLabels', {});
-lyr_Suelos_CIREN_Grupo5_4_37.set('fieldLabels', {});
-lyr_Suelos_CIREN_Grupo7_7_38.set('fieldLabels', {});
-lyr_propiedades_R05_R06_R13_29943_5_39.set('fieldLabels', {});
-lyr_TtulosdeMerced_15.set('fieldLabels', {'fid': 'hidden field', 'comunidad': 'no label', 'letra': 'no label', 'titulo_mer': 'no label', 'p_remensur': 'no label', 'cod_region': 'no label', 'nom_r[...]
-lyr_reasdeDesarrolloIndgenaADI_16.set('fieldLabels', {'fid': 'no label', 'COD_COMUNA': 'no label', 'COD_PROVIN': 'no label', 'COD_REGION': 'no label', 'COMUNAS': 'no label', 'ETNIA': 'no label', [...]
-lyr_Comprasdetierras_17.set('fieldLabels', {'fid': 'hidden field', 'year': 'no label', 'sector': 'no label', 'nombre': 'no label', 'apellido_p': 'no label', 'apellido_m': 'no label', 'tipo_proye'[...]
-lyr_ComunidadesIndgenas_18.set('fieldLabels', {'fid': 'hidden field', 'direccion': 'no label', 'comunidad': 'no label', 'fuente_inf': 'no label', 'estado': 'no label', 'cod_region': 'no label', '[...]
-lyr_MonumentosArqueolgicos_19.set('fieldLabels', {'fid': 'hidden field', 'CUT_COM': 'no label', 'REGION': 'no label', 'PROVINCIA': 'no label', 'COMUNA': 'no label', 'CORRELATIV': 'no label', 'ID_[...]
-lyr_MonumentosNacionales_20.set('fieldLabels', {'fid': 'hidden field', 'objectid': 'hidden field', 'cut_com': 'no label', 'region': 'no label', 'provincia': 'no label', 'comuna': 'no label', 'cod[...]
-lyr_SNAP_21.set('fieldLabels', {'fid': 'hidden field', 'SUPERFICIE': 'no label', 'NOMBRE_TOT': 'no label', 'ID_CATASTR': 'no label', 'CATEGORIA': 'no label', 'NOMBRE_UNI': 'no label', 'REGION': '[...]
-lyr_ReservasdelaBiosfera_22.set('fieldLabels', {'fid': 'no label', 'fid_1': 'no label', 'cod_ap': 'no label', 'Codrnap': 'no label', 'nom_orig': 'no label', 'id_desig': 'no label', 'designa': 'no[...]
+lyr_Predios_CIREN_Grupo1_2_34.set('fieldLabels', {'ROL': 'inline label - visible with data'});
+lyr_Predios_CIREN_Grupo7_8_35.set('fieldLabels', {'ROL': 'inline label - visible with data'});
+lyr_Suelos_CIREN_Grupo1_1_36.set('fieldLabels', {'TEXTCAUS': 'inline label - visible with data'});
+lyr_Suelos_CIREN_Grupo5_4_37.set('fieldLabels', {'TEXTCAUS': 'inline label - visible with data'});
+lyr_Suelos_CIREN_Grupo7_7_38.set('fieldLabels', {'TEXTCAUS': 'inline label - visible with data'});
+lyr_propiedades_R05_R06_R13_29943_5_39.set('fieldLabels', {'ROL': 'inline label - visible with data'});
+lyr_TtulosdeMerced_15.set('fieldLabels', {'fid': 'hidden field', 'comunidad': 'no label', 'letra': 'no label', 'titulo_mer': 'no label', 'p_remensur': 'no label', 'cod_region': 'no label'});
+lyr_reasdeDesarrolloIndgenaADI_16.set('fieldLabels', {'fid': 'no label', 'COD_COMUNA': 'no label', 'COD_PROVIN': 'no label', 'COD_REGION': 'no label', 'COMUNAS': 'no label', 'ETNIA': 'no label'});
+lyr_Comprasdetierras_17.set('fieldLabels', {'fid': 'hidden field', 'year': 'no label', 'sector': 'no label', 'nombre': 'no label', 'apellido_p': 'no label', 'apellido_m': 'no label'});
+lyr_ComunidadesIndgenas_18.set('fieldLabels', {'fid': 'hidden field', 'direccion': 'no label', 'comunidad': 'no label', 'fuente_inf': 'no label', 'estado': 'no label', 'cod_region': 'no label'});
+lyr_MonumentosArqueolgicos_19.set('fieldLabels', {'fid': 'hidden field', 'CUT_COM': 'no label', 'REGION': 'no label', 'PROVINCIA': 'no label', 'COMUNA': 'no label', 'CORRELATIV': 'no label'});
+lyr_MonumentosNacionales_20.set('fieldLabels', {'fid': 'hidden field', 'objectid': 'hidden field', 'cut_com': 'no label', 'region': 'no label', 'provincia': 'no label', 'comuna': 'no label'});
+lyr_SNAP_21.set('fieldLabels', {'fid': 'hidden field', 'SUPERFICIE': 'no label', 'NOMBRE_TOT': 'no label', 'ID_CATASTR': 'no label', 'CATEGORIA': 'no label', 'NOMBRE_UNI': 'no label'});
+lyr_ReservasdelaBiosfera_22.set('fieldLabels', {'fid': 'no label', 'fid_1': 'no label', 'cod_ap': 'no label', 'Codrnap': 'no label', 'nom_orig': 'no label', 'id_desig': 'no label'});
 lyr_PlanesRECOGEMMA_23.set('fieldLabels', {'fid': 'hidden field', 'ID_Plan': 'no label', 'superficie': 'no label', 'recoge': 'no label', });
-lyr_SitiosPrioritariosdeConservacin_24.set('fieldLabels', {'fid': 'no label', 'OBJECTID': 'no label', 'nombre': 'no label', 'cod_region': 'no label', 'nom_region': 'no label', 'cod_provincia': 'n[...]
-lyr_reasMarinasProtegidas_25.set('fieldLabels', {'fid': 'hidden field', 'NOMBRE': 'no label', 'TIPO_AMP': 'no label', 'C_REGION': 'no label', 'REGION': 'no label', 'C_INSTIT': 'no label', 'SUP_HA[...]
-lyr_SitiosRamsar_26.set('fieldLabels', {'fid': 'hidden field', 'fid_1': 'hidden field', 'cod_ap': 'hidden field', 'Codrnap': 'no label', 'nom_orig': 'no label', 'id_desig': 'no label', 'designa':[...]
-lyr_InventarioNacionaldeHumedalesMMA_27.set('fieldLabels', {'fid': 'hidden field', 'OBJECTID': 'hidden field', 'COD_HUMEDA': 'no label', 'NOM_HUMDET': 'no label', 'NOM_HUMMAS': 'no label', 'ORDEN[...]
-lyr_InmueblesdeConservacinHistrica_28.set('fieldLabels', {'fid': 'hidden field', 'OBJECTID': 'hidden field', 'REGION': 'no label', 'COMUNA': 'no label', 'NOMBRE': 'no label', 'DIRECCION': 'no lab[...]
-lyr_ZonasdeConservacinHistrica_29.set('fieldLabels', {'fid': 'hidden field', 'OBJECTID_1': 'hidden field', 'OBJECTID': 'hidden field', 'Shape_Leng': 'hidden field', 'REG': 'no label', 'COM': 'no [...]
-lyr_ZonasdeIntersTursticoZOIT_30.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'descriptio': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label', 'altitudeMo':[...]
+lyr_SitiosPrioritariosdeConservacin_24.set('fieldLabels', {'fid': 'no label', 'OBJECTID': 'no label', 'nombre': 'no label', 'cod_region': 'no label', 'nom_region': 'no label'});
+lyr_reasMarinasProtegidas_25.set('fieldLabels', {'fid': 'hidden field', 'NOMBRE': 'no label', 'TIPO_AMP': 'no label', 'C_REGION': 'no label', 'REGION': 'no label', 'C_INSTIT': 'no label'});
+lyr_SitiosRamsar_26.set('fieldLabels', {'fid': 'hidden field', 'fid_1': 'hidden field', 'cod_ap': 'hidden field', 'Codrnap': 'no label', 'nom_orig': 'no label', 'id_desig': 'no label'});
+lyr_InventarioNacionaldeHumedalesMMA_27.set('fieldLabels', {'fid': 'hidden field', 'OBJECTID': 'hidden field', 'COD_HUMEDA': 'no label', 'NOM_HUMDET': 'no label', 'NOM_HUMMAS': 'no label'});
+lyr_InmueblesdeConservacinHistrica_28.set('fieldLabels', {'fid': 'hidden field', 'OBJECTID': 'hidden field', 'REGION': 'no label', 'COMUNA': 'no label', 'NOMBRE': 'no label'});
+lyr_ZonasdeConservacinHistrica_29.set('fieldLabels', {'fid': 'hidden field', 'OBJECTID_1': 'hidden field', 'OBJECTID': 'hidden field', 'Shape_Leng': 'hidden field', 'REG': 'no label'});
+lyr_ZonasdeIntersTursticoZOIT_30.set('fieldLabels', {'id': 'no label', 'Name': 'no label', 'descriptio': 'no label', 'timestamp': 'no label', 'begin': 'no label', 'end': 'no label'});
 lyr_ZonasdeIntersTursticoZOIT_30.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
+

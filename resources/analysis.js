@@ -100,7 +100,8 @@ document.addEventListener('DOMContentLoaded', function() {
             window['group_Planificacin'],
             window['group_MedioNatural'],
             window['group_MedioCultural'],
-            window['group_CONADI']
+            window['group_CONADI'],
+            window['group_CIREN_SII']
         ];
         
         let sourceLayers = [];
@@ -243,6 +244,25 @@ document.addEventListener('DOMContentLoaded', function() {
                                     const cod = props['COD_HUMEDA'] || 'Sin código';
                                     const nom = props['NOM_HUMDET'] || 'Sin nombre';
                                     featureName = `${cod} - ${nom}`;
+                                }
+                                
+                                const cleanTitleLower = cleanTitle.toLowerCase();
+                                // Lógica específica para propiedades y predios
+                                if (cleanTitleLower.includes('propiedad') || cleanTitleLower.includes('predio')) {
+                                    if (props['ROL']) {
+                                        featureName = `ROL: ${props['ROL']}`;
+                                    } else if (props['rol']) {
+                                        featureName = `ROL: ${props['rol']}`;
+                                    }
+                                }
+                                
+                                // Lógica específica para suelos CIREN
+                                if (cleanTitleLower.includes('suelos') && cleanTitleLower.includes('ciren')) {
+                                    if (props['TEXTCAUS']) {
+                                        featureName = props['TEXTCAUS'];
+                                    } else if (props['textcaus']) {
+                                        featureName = props['textcaus'];
+                                    }
                                 }
                                 
                                 const ext = feature.getGeometry().getExtent();
